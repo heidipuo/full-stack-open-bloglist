@@ -9,7 +9,7 @@
     "start-prod": "cross-env NODE_ENV=production node index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
