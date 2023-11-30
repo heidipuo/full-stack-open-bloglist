@@ -7,9 +7,12 @@
     "dev": "vite --host",
     "build": "vite build",
     "start-prod": "cross-env NODE_ENV=production node index.js",
+    "start-test": "cross-env NODE_ENV=test node index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --testTimeout=30000"
+    "test": "cross-env NODE_ENV=test jest",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -43,7 +46,7 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "cross-env": "^7.0.3",
-    "cypress": "^13.0.0",
+    "cypress": "^13.6.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-cypress": "^2.14.0",
