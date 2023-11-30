@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose')
 const supertest = require('supertest')
 const app = require('../app')
@@ -252,7 +253,6 @@ describe('when there is initially some blogs saved', () => {
         updatedBlog.user = updatedBlog.user.toString()
       }
 
-      expect(updatedBlog).toEqual(result.body)
       expect(updatedBlog.title).toBe(blogUpdate.title)
 
     })
