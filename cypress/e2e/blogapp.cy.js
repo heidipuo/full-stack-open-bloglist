@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 describe('Blog ', function () {
   beforeEach(function () {
     cy.request('POST', `${Cypress.env('BACKEND')}/testing/reset`)
