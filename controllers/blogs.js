@@ -75,7 +75,7 @@ blogsRouter.post('/:id/comments', async (request, response) => {
     comments: blog.comments.concat(request.body.content)
   }
   console.log('updated', updatedBlog)
-  let result  = await Blog.findByIdAndUpdate(request.params.id, updatedBlog, { new: true})
+  let result  = await Blog.findByIdAndUpdate(request.params.id, updatedBlog, { new: true })
   result = await result.populate('user', { username: 1, name: 1 })
   console.log('res', result)
   response.json(result)

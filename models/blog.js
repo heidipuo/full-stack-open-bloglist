@@ -23,7 +23,7 @@ const blogSchema = mongoose.Schema({
       type: String
     }
   ]
-  
+
 })
 
 blogSchema.set('toJSON', {
