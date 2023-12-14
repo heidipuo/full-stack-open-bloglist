@@ -4,12 +4,11 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --host",
+    "start": "vite --host",
     "build": "vite build",
     "start-prod": "node index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "cross-env NODE_ENV=test jest",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run"
   },
