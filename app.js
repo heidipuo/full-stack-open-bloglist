@@ -12,7 +12,7 @@ const loginRouter = require('./controllers/login')
 const middleware = require('./utils/middleware')
 const morgan = require('morgan')
 
-const mongoUrl = config.MONGODB_URI 
+const mongoUrl = config.MONGODB_URI
 
 logger.info('connecting to MongoDB')
 mongoose.connect(mongoUrl)
