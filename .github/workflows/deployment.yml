@@ -17,8 +17,13 @@ jobs:
         run: npm install
       - name: Check style
         run: npm run lint
+      - name: Create env file
+        run: |
+          touch .env
+          echo MONGODB_URI=${{ secrets.MONGODB_URI }} >> .env
+          cat .env
       - name: Build
-        run: MONGODB_URI=${{secrets.MONGODB_URI}} npm run build
+        run: npm run build
       - name: e2e tests
         uses: cypress-io/github-action@v5
         with:
