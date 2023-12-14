@@ -5,5 +5,5 @@ const logger = require('./utils/logger')
 const PORT = config.PORT || 3003
 
 app.listen(PORT, () => {
-  logger.info(`Server running on port ${PORT}, process.env ${process.env.MONGODB_URI}`)
+  logger.info(`Server running on port ${PORT}`)
 })
