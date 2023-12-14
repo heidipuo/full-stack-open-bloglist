@@ -8,7 +8,7 @@ describe('Blog ', function () {
       password: 'secret',
     }
     cy.request('POST', `${Cypress.env('BACKEND')}/users`, user)
-    cy.visit('')
+    cy.visit('http://localhost:3003')
   })
 
   it('login form is shown', function () {
