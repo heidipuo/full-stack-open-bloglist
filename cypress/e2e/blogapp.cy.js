@@ -1,13 +1,5 @@
 describe('Blog ', function () {
-  beforeEach(function () {
-    cy.request('POST', `${Cypress.env('BACKEND')}/testing/reset`)
-
-    const user = {
-      name: 'Test User',
-      username: 'test user',
-      password: 'secret',
-    }
-    cy.request('POST', `${Cypress.env('BACKEND')}/users`, user)
+  this.beforeEach(function () {
     cy.visit('http://localhost:3003')
   })
 
